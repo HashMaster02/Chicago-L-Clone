@@ -1,15 +1,18 @@
-import java.util.ArrayList;
-
 public class LookUp {
 
-    CTAMap map;
+    SubwayMap map;
 
-    LookUp(CTAMap m) {
+    LookUp(SubwayMap m) {
         this.map = m;
     }
 
-    public ArrayList<Station> lookFor(String name) {
-        return map.getStationData(name);
+    public String lookFor(String name) {
+        if (this.map.getStationData(name) != null) {
+            return map.getStationData(name).toString();
+        }
+        else {
+            return "This station was not found.";
+        }
     }
 
 }

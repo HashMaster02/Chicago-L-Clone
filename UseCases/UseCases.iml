@@ -15,10 +15,11 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src2" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Route" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Resources/tests/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/Resources/tests/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/Sandbox" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/UnitTests" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/LookUp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tests/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests/resources" type="java-test-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
