@@ -15,18 +15,18 @@ public class Train {
         this.totalStations++;
     }
 
-    public void addStation(int i, String name) {
+    public void addStation(String name, int i) {
         this.stations.add(i, name);
         this.totalStations++;
     }
 
-    public void movePosition(String n, int oldIdx, int newIdx) {
-        this.stations.remove(oldIdx);
+    public void movePosition(String n, int newIdx) {
+        this.stations.remove(n);
         this.stations.add(newIdx, n);
     }
 
-    public void deleteStation(int i) {
-        this.stations.remove(i);
+    public void deleteStation(String n) {
+        this.stations.remove(n);
         this.totalStations--;
     }
 
@@ -34,7 +34,7 @@ public class Train {
         return this.stations.get(i);
     }
 
-    public ArrayList<String> getStationsFrom(int start, int end) {
+    public ArrayList<String> getStationsInRange(int start, int end) {
         ArrayList<String> slice = new ArrayList<>();
 
         for (int i=start; i < end; i++) {
@@ -46,10 +46,6 @@ public class Train {
 
     public ArrayList<String> getAllStations() {
         return this.stations;
-    }
-
-    public String toString() {
-        return this.stations.toString();
     }
 
 }

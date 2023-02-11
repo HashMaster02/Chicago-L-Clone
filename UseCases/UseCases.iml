@@ -8,15 +8,17 @@
       <sourceFolder url="file://$MODULE_DIR$/Database" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Interactor" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Interfaces" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/LookUp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Modify" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Removing Stations" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Resources/Entities" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Resources/Types" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Sandbox(mains)" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Trains" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Route" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Resources/tests/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/Resources/tests/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/Sandbox" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/UnitTests" type="java-test-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -33,6 +35,38 @@
         </SOURCES>
         <jarDirectory url="file://$MODULE_DIR$/../../ext libs/commons-collections4-4.4" recursive="false" />
         <jarDirectory url="file://$MODULE_DIR$/../../ext libs/commons-collections4-4.4" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library name="JUnit5.8.1">
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter/5.8.1/junit-jupiter-5.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.8.1/junit-jupiter-engine-5.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.8.1/junit-platform-engine-1.8.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter/5.8.1/junit-jupiter-5.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.8.1/junit-jupiter-engine-5.8.1.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.8.1/junit-platform-engine-1.8.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
       </library>
     </orderEntry>
   </component>
