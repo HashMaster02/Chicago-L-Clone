@@ -5,9 +5,9 @@ public class Train {
     private ArrayList<String> stations;
     public int totalStations;
 
-    Train(ArrayList<String> data, int t) {
+    Train(ArrayList<String> data) {
         this.stations = data;
-        this.totalStations = t;
+        this.totalStations = data.size();
     }
 
     public void addStation(String name) {

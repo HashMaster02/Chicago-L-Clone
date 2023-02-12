@@ -12,7 +12,7 @@ class TrainTest {
         String[] names = {"Harlem", "Oak Park", "Ridgeland", "Austin", "Central", "Laramie", "Cicero", "Pulaski", "Conservatory-Central Park Drive"};
         ArrayList<String> forTrain = new ArrayList<>(Arrays.asList(names));
 
-        Train train = new Train(forTrain, forTrain.size());
+        Train train = new Train(forTrain);
         train.addStation("Roosevelt");
 
         String[] newNames = {"Harlem", "Oak Park", "Ridgeland", "Austin", "Central", "Laramie", "Cicero", "Pulaski",
@@ -28,7 +28,7 @@ class TrainTest {
         String[] names = {"Harlem", "Oak Park", "Ridgeland", "Austin", "Central", "Laramie", "Cicero", "Pulaski", "Conservatory-Central Park Drive"};
         ArrayList<String> forTrain = new ArrayList<>(Arrays.asList(names));
 
-        Train train = new Train(forTrain, forTrain.size());
+        Train train = new Train(forTrain);
         train.addStation("Roosevelt", 4);
 
         String[] newNames = {"Harlem", "Oak Park", "Ridgeland", "Austin", "Roosevelt", "Central", "Laramie", "Cicero", "Pulaski",
@@ -45,7 +45,7 @@ class TrainTest {
         String[] names = {"Harlem", "Oak Park", "Ridgeland", "Austin", "Central", "Laramie", "Cicero", "Pulaski"};
         ArrayList<String> forTrain = new ArrayList<>(Arrays.asList(names));
 
-        Train train = new Train(forTrain, forTrain.size());
+        Train train = new Train(forTrain);
         train.movePosition("Harlem", forTrain.size()-1);
 
         String[] newNames = {"Oak Park", "Ridgeland", "Austin", "Central", "Laramie", "Cicero", "Pulaski", "Harlem"};
@@ -60,7 +60,7 @@ class TrainTest {
         String[] names = {"Harlem", "Oak Park", "Ridgeland", "Roosevelt", "Austin"};
         ArrayList<String> forTrain = new ArrayList<>(Arrays.asList(names));
 
-        Train train = new Train(forTrain, forTrain.size());
+        Train train = new Train(forTrain);
         train.deleteStation("Ridgeland");
 
         String[] newNames = {"Harlem", "Oak Park", "Roosevelt", "Austin"};
@@ -75,7 +75,7 @@ class TrainTest {
         String[] names = {"Harlem", "Oak Park", "Ridgeland", "Austin", "Central", "Laramie", "Cicero", "Pulaski", "Conservatory-Central Park Drive"};
         ArrayList<String> forTrain = new ArrayList<>(Arrays.asList(names));
 
-        Train train = new Train(forTrain, forTrain.size());
+        Train train = new Train(forTrain);
 
         assertEquals("Austin", train.getStation(3));
     }
@@ -85,7 +85,7 @@ class TrainTest {
         String[] names = {"Harlem", "Oak Park", "Ridgeland", "Austin", "Central", "Laramie", "Cicero", "Pulaski"};
         ArrayList<String> forTrain = new ArrayList<>(Arrays.asList(names));
 
-        Train train = new Train(forTrain, forTrain.size());
+        Train train = new Train(forTrain);
 
         ArrayList<String> rtrn = train.getStationsInRange(2, 6);
         String[] newNames = {"Ridgeland", "Austin", "Central", "Laramie"};
@@ -99,7 +99,7 @@ class TrainTest {
         String[] names = {"Harlem", "Oak Park", "Ridgeland", "Austin", "Central", "Laramie", "Cicero", "Pulaski"};
         ArrayList<String> forTrain = new ArrayList<>(Arrays.asList(names));
 
-        Train train = new Train(forTrain, forTrain.size());
+        Train train = new Train(forTrain);
 
         assertEquals(train.getAllStations(), forTrain);
     }

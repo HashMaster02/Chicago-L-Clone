@@ -1,23 +1,22 @@
-import java.util.ArrayList;
-
 public class Add {
 
-    String[] input;
+    Train trainLine;
+    SubwayMap map;
 
-    Add(String[] userInput) {
-        this.input = userInput;
+    Add(Train l, SubwayMap m)
+    {
+        this.trainLine = l;
+        this.map = m;
     }
 
-    public void newStation(Train line, CTAMap map, int pos) {
-        line.addStation(pos, this.input[0]);
-        map.addStation(this.input);
-        Update update = new Update();
-        update.indices(line, map, pos+1, line.totalStations, 1);
+    public void newStation(String[] newStation, int pos) {
+        this.trainLine.addStation(newStation[0], pos);
+        map.addStation(newStation);
     }
 
-    public void newStation(Train line, CTAMap map) {
-        line.addStation(this.input[0]);
-        map.addStation(this.input);
+    public void newStation(String[] newStation) {
+        this.trainLine.addStation(newStation[0]);
+        this.map.addStation(newStation);
     }
 
 }

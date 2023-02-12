@@ -20,6 +20,3 @@ if necessary. It also allows you to:
 * Update information about stations
 * Delete stations
 * Look-up information about a particular station
-
-## Testing ##
-All tests are witten using JUnit.
