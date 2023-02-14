@@ -20,3 +20,7 @@ if necessary. It also allows you to:
 * Update information about stations
 * Delete stations
 * Look-up information about a particular station
+
+### Development Info
+* Unit tests are written using JUnit.
+* Developed using Intellij IDE
