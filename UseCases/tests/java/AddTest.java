@@ -45,8 +45,7 @@ class AddTest {
                 {"Central", "0.0", "1.1", "Elevated", "True", "Green", "Red"},
                 {"Laramie", "0.0", "1.1", "Elevated", "False", "Green", "Pink", "Blue"},
                 {"Cicero", "0.0", "1.1", "Elevated", "False", "Green", "Pink", "Blue"}};
-        String[] names = {"Harlem", "Oak Park", "Ridgeland", "Austin", "Central", "Laramie", "Cicero"};
-        ArrayList<String> forTrain = new ArrayList<>(Arrays.asList(names));
+        ArrayList<String> forTrain = new ArrayList<>(Arrays.asList("Harlem", "Oak Park", "Ridgeland", "Austin", "Central", "Laramie", "Cicero"));
         SubwayMap map = new SubwayMap(dummyData);
         Train train = new Train(forTrain);
 

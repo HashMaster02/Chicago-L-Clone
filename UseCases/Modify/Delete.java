@@ -1,15 +1,21 @@
-public class Delete {
+public class Delete
+{
 
-    SubwayMap map;
+    private SubwayMap map;
 
-    Delete(Train[] t, SubwayMap m)
+    Delete(SubwayMap m)
     {
         this.map = m;
     }
 
-    void station(String name, Train t)
+    public void station(String name, Train line)
     {
+        line.deleteStation(name);
 
+        if (this.map.getStationData(name) != null)
+        {
+            this.map.deleteStation(name);
+        }
     }
 
 }

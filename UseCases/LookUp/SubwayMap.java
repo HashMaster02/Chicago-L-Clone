@@ -16,6 +16,11 @@ public class SubwayMap {
         this.stationInfo.put(station.name, station);
     }
 
+    public void deleteStation(String name)
+    {
+        this.stationInfo.remove(name);
+    }
+
     public Station getStationData(String name) {
         return this.stationInfo.get(name);
     }

@@ -1,6 +1,6 @@
 public class Add {
 
-    SubwayMap map;
+    private SubwayMap map;
 
     Add(SubwayMap m)
     {
