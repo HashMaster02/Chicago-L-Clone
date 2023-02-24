@@ -34,11 +34,26 @@ public class Train {
         return this.stations.get(i);
     }
 
-    public ArrayList<String> getStationsInRange(int start, int end) {
+    public int getIndexOf(String name)
+    {
+        return stations.indexOf(name);
+    }
+
+    public ArrayList<String> getStationsInRange(int start, int end)
+    {
         ArrayList<String> slice = new ArrayList<>();
 
-        for (int i=start; i < end; i++) {
-            slice.add(this.stations.get(i));
+        if (start < end) {
+            for (int i = start; i <= end; i++) {
+                slice.add(this.stations.get(i));
+            }
+        }
+
+        else
+        {
+            for (int i = start; i >= end; i--) {
+                slice.add(this.stations.get(i));
+            }
         }
 
         return slice;

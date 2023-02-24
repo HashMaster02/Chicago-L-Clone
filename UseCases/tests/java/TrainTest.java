@@ -81,14 +81,28 @@ class TrainTest {
     }
 
     @Test
-    void getStationsInRange() {
+    void getStationsInRange_LowToHigh() {
         String[] names = {"Harlem", "Oak Park", "Ridgeland", "Austin", "Central", "Laramie", "Cicero", "Pulaski"};
         ArrayList<String> forTrain = new ArrayList<>(Arrays.asList(names));
 
         Train train = new Train(forTrain);
 
         ArrayList<String> rtrn = train.getStationsInRange(2, 6);
-        String[] newNames = {"Ridgeland", "Austin", "Central", "Laramie"};
+        String[] newNames = {"Ridgeland", "Austin", "Central", "Laramie", "Cicero"};
+        ArrayList<String> expected = new ArrayList<>(Arrays.asList(newNames));
+
+        assertEquals(rtrn, expected);
+    }
+
+    @Test
+    void getStationsInRange_HighToLow() {
+        String[] names = {"Harlem", "Oak Park", "Ridgeland", "Austin", "Central", "Laramie", "Cicero", "Pulaski"};
+        ArrayList<String> forTrain = new ArrayList<>(Arrays.asList(names));
+
+        Train train = new Train(forTrain);
+
+        ArrayList<String> rtrn = train.getStationsInRange(6, 2);
+        String[] newNames = {"Cicero", "Laramie", "Central", "Austin", "Ridgeland"};
         ArrayList<String> expected = new ArrayList<>(Arrays.asList(newNames));
 
         assertEquals(rtrn, expected);
