@@ -37,7 +37,7 @@ class RoutingTest {
 
         Routing gps = new Routing(map, allServices);
 
-        ArrayList<String> finalRoute = gps.findRoute("Oak Park", "Roosevelt");
+        ArrayList<String> finalRoute = gps.findRoute_SingleLine("Oak Park", "Roosevelt");
 
         String[] actual = {"Oak Park","Ridgeland","Austin", "Central", "Laramie",
                 "Cicero","Pulaski", "Conservatory-Central Park Drive", "Roosevelt"};
@@ -77,7 +77,7 @@ class RoutingTest {
 
         Routing gps = new Routing(map, allServices);
 
-        ArrayList<String> finalRoute = gps.findRoute("Jackson", "Pulaski");
+        ArrayList<String> finalRoute = gps.findRoute_SingleLine("Jackson", "Pulaski");
 
         String[] actual = {"Jackson", "Laramie", "Damian", "Chicago", "Roosevelt", "Conservatory-Central Park Drive", "Pulaski"};
         ArrayList<String> finalRouteActual = new ArrayList<>(Arrays.asList(actual));

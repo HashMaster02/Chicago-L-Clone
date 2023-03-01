@@ -11,7 +11,7 @@ public class Routing {
         this.trains = t;
     }
 
-    public ArrayList<String> findRoute(String start, String end)
+    public ArrayList<String> findRoute_SingleLine(String start, String end)
     {
         Station origin = this.map.getStationData(start);
         Station destination = this.map.getStationData(end);
@@ -59,5 +59,7 @@ public class Routing {
     {
         return t.getStationsInRange(t.getIndexOf(o), t.getIndexOf(d));
     }
+
+
 
 }

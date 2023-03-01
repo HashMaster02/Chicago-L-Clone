@@ -3,7 +3,7 @@ public class testData {
     public static void main(String[] args) {
         // ------------------------------Dummy Data------------------------------------------
         String[][] dummyData = {
-                {"Harlem", "0.0", "1.1", "Elevated", "True", "Green"},
+                {"Harlem", "0.0", "1.1", "Elevated", "True", "Green", "Pink"},
                 {"Oak Park", "0.0", "1.1", "Elevated", "True", "Green"},
                 {"Ridgeland", "0.0", "1.1", "Elevated", "True", "Green"},
                 {"Austin", "0.0", "1.1", "Elevated", "True", "Green"},
@@ -12,7 +12,7 @@ public class testData {
                 {"Cicero", "0.0", "1.1", "Elevated", "False", "Green", "Pink", "Blue"},
                 {"Pulaski", "0.0", "1.1", "Elevated", "False", "Green", "Pink", "Blue"},
                 {"Conservatory-Central Park Drive", "0.0", "1.1", "Elevated", "False", "Green", "Pink", "Blue"},
-                {"Roosevelt", "0.0", "1.1", "Elevated", "True", "Red"},
+                {"Roosevelt", "0.0", "1.1", "Elevated", "True", "Red", "Blue"},
                 {"Chicago", "0.0", "1.1", "Elevated", "True", "Red"},
                 {"Damian", "0.0", "1.1", "Elevated", "True", "Red"},
                 {"Laramie", "0.0", "1.1", "Elevated", "True", "Red"},
